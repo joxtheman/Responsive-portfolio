@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
-      integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,6 +19,44 @@
   </head>
   <body>
     <!-- Header -->
+    <header>
+      <a href="#" class="logo">
+        <img src="/assets/images/logo.png" alt="logo" />
+      </a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <ul class="navlist">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="#" class="top-btn">Download CV</a>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="home-text">
+        <h3>Hello, I'm</h3>
+        <h1>John Doe</h1>
+        <h5>A Frontend Developer <span>From New York</span></h5>
+        <p>
+          I'm frontend developer based in New York, and I'm very passionate and
+          dedicated to my work.
+        </p>
+        <div class="social">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="#"><i class="bx bxl-dribbble"></i></a>
+        </div>
+        <a href="#" class="btn">About Me</a>
+      </div>
+      <div class="home-img">
+        <img src="./assets/images/profile.png" alt="profile" />
+      </div>
+    </section>
 
     <!-- Link to js file -->
     <script src="script.js"></script>
