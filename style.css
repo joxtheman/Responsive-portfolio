@@ -14,7 +14,7 @@
   --second-color: #a09dab;
   --main-color: #f75023;
   --big-font: 3rem;
-  --h2-font: 1rem;
+  --h2-font: 1.6rem;
   --p-font: 0.8rem;
 }
 
@@ -119,7 +119,7 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  grid-gap: 2rem;
+  column-gap: 2rem;
 }
 
 .home-text h1 {
@@ -196,7 +196,7 @@ span,
 .items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-  grid-gap: 2rem;
+  column-gap: 2rem;
   align-items: center;
 }
 
@@ -231,4 +231,36 @@ span,
   will-change: transform;
   transform: perspective(1000px) rotateX(4.8deg) rotateY(10.23deg)
     scale3d(1.05, 1.05, 1.05);
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.about-img img {
+  max-width: 100%;
+  width: 540px;
+  height: auto;
+}
+.about-text h2 {
+  font-size: var(--h2-font);
+  font-weight: 500;
+  margin: 8px 0px 25px;
+  line-height: 1.1;
+}
+
+.about-text h3 {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+.about-text p {
+  max-width: 500px;
+  font-size: var(--p-font);
+  color: var(--second-color);
+  line-height: 20px;
+  margin-bottom: 40px;
 }
